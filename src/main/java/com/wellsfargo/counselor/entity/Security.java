@@ -12,7 +12,7 @@ public class Security {
     @GeneratedValue()
     private long securityId;
     
-    @ManyToOne // Many securities belong to one portfolio
+    @ManyToOne
     @JoinColumn(name = "portfolioId", nullable = false)
     private Portfolio portfolio;
 
