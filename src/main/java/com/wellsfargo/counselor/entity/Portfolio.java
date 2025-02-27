@@ -12,7 +12,7 @@ public class Portfolio {
     @GeneratedValue()
     private long portfolioId;
 
-    @ManyToOne // Many portfolios belong to one client
+    @ManyToOne
     @JoinColumn(name = "clientId", nullable = false)
     private Client client;
 
