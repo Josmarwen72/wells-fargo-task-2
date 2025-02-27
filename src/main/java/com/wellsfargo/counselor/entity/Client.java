@@ -14,8 +14,8 @@ public class Client {
     @GeneratedValue()
     private long clientId;
 
-    @ManyToOne // Many clients can be associated with one advisor
-    @JoinColumn(name = "advisorId", nullable = false) // Foreign key column
+    @ManyToOne 
+    @JoinColumn(name = "advisorId", nullable = false)
     private Advisor advisor;
 
     @Column(nullable = false)
